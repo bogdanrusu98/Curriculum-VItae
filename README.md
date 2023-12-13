@@ -3,7 +3,7 @@
 
 Acest CV online este creat folosind HTML, CSS și JavaScript, cu accent pe utilizarea bibliotecii Bootstrap pentru a asigura un design modern și responsiv. Iată o descriere detaliată a diferitelor secțiuni ale CV-ului:
 
-Bara de Navigație:
+# Bara de Navigație:
 
 Bara de navigație oferă o navigare simplă și intuitivă între diferitele secțiuni ale CV-ului.
 Designul responsive asigură o experiență plăcută și ușor de utilizat pe dispozitive mobile și desktop.

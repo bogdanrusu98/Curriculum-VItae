@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript palindrome</title>
+        <style>
+            body {
+                width: 100%;
+            }
+            .container {
+                width: 60%;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center;
+            }
+
+
+        </style>
+        <script>
+
+            var words = prompt("Write your word!");
+            var modified = words;
+            var firstString = modified.split("");
+            var reverse = firstString.reverse("");
+            var result = reverse.join("");
+
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Palindrom</h1>
+        
+            <script>
+                document.write("Your word is " + words + "<br> And your word backwards is: " + reverse + "<br>");
+
+                if (words === result) {
+                    document.write("This is a palindrome");
+                } else {
+                    document.write("This is not a palindrome");
+                }
+
+            </script>
+
+        </div>
+
+
+
+    </body>
+</html>

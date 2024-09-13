@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+<title> Coronavirus in lume </title>
+<link href = "images/coronavirus.jpg" rel="icon" type="image">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    background-image: url('images/coronavirus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.button {
+    background-color: rgb(70, 68, 68);
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+.button:hover {
+    background-color: lightblue;
+    padding: 25px 30px;
+    font-weight: bold;
+}
+/*
+header.container{
+    background-color: rgb(214, 214, 214);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+}
+*/
+.nav-bar {
+    background-color: rgb(70, 68, 68);
+    padding: 25px;
+    width: 70%;
+    margin: auto;
+    border-bottom: lightblue solid 22px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+article {
+    padding: 25px;
+    width: 70%;
+    margin: auto;
+    height: auto;
+    font-family: Helvetica;
+    background-color: rgb(221, 221, 223);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+}
+.container-article h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+.container-article {
+    height: auto;
+    overflow: hidden;
+    clear: both;
+    padding-bottom: 4%;
+    position: relative;
+}
+.container-article .coronavirus:hover {
+    color: darkred;
+}
+.container-article .coronavirus {
+    color: red;
+}
+.container-article p, li {
+    font-size: 20px;
+    color: rgb(70, 70, 70);
+}
+.container-article h2 {
+    font-family: cursive;
+    color: rgb(182, 74, 74);
+}
+.virus{
+    position: absolute;
+    animation:spin 25s linear infinite;
+    width: 48px;
+    left: 79%;
+    top: -0.89%;
+    padding: 25px;
+  }
+  .virus2 {
+     float: right;
+  }
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+        }
+    to {
+        transform:rotate(-360deg);
+        }
+  }
+  @-webkit-keyframes spin {
+    from {
+        transform:rotate(0deg);
+        }
+    to {
+        transform:rotate(-360deg);
+        }
+  }
+  #right-button {
+    width: 3%;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 36.1%;
+  }
+  #left-button {
+    width: 3%;
+    float: right;
+    left: 36.1%;
+    bottom: 0;
+    position: absolute;
+  }
+  #down-button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 3%;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+    display: block;
+    opacity: 0.65;
+  }
+  #down-button:hover {
+    opacity: 0.90;
+  }
+  #up-button{
+    margin-left: auto;
+    margin-right: 5%;
+    width: 3%;
+    bottom: 0;
+    float: right;
+    opacity: 0.65;
+  }
+  #up-button:hover {
+    opacity: 0.90;
+  }
+  table, th, td, caption {
+      border: 2px solid gray;
+      border-collapse: collapse;
+      padding: 4px;
+  }
+  .table, .td, .th {
+      border: none;
+  }
+.floatLeft {
+    float: left;
+    width: 33%
+}
+.floatRight {
+    float: right;
+    width: 33%;
+}
+caption {
+    border-bottom: none;
+} 
+.container-article table {
+    margin: 1%;
+}
+#Africa {
+    float: left;
+}
+@media screen and (max-width: 1807px) {
+    .floatLeft {
+    float: left;
+    width: 22%
+}
+.floatRight {
+    float: right;
+    width: 22%;
+}
+}
+@media screen and (max-width: 1645px) {
+    body {
+        font-size: 15px;
+    }
+}
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 70%;
+  }
+</style>
+</head>
+<body>
+<header class="container">
+    <img src="images/images.jfif" class="virus" title="virus"> 
+<div class="nav-bar">
+    <table class="table">
+    <tr>
+        <td class="td"><a href="index.html" class="button">Acasa</a></td>
+        <td class="td"><a href="dezvoltare.html" class="button">Coronavirus in lume</a></td>
+        <td class="td"><a href="protection.html" class="button">Cum ne protejam?</a></td>
+        <td class="td"><a href="romania.html" class="button">Coronavirus in Romania</a></td>
+        <td class="td"><a href="credits.html" class="button">Credite si Biografie</a></td>
+</tr>
+</table>
+</div>
+</header>
+<br><br><br>
+<article>
+    <div class="container-article">
+        <h1><span class="coronavirus">Coronavirus</span> in lume</h1>
+        <div class="tables">
+        <table class="floatLeft">
+        <caption>In Europa</caption>
+            <tr>
+                <th>TARA</th>
+                <th>CAZURI CONFIRMATE</th>
+                <th>DECEDATI</th>
+                <th>VINDECATI</th>
+            </tr>
+            <tr>
+                <td>Italia</td>
+                <td>10149</td>
+                <td>631</td>
+                <td>724</td>
+            </tr>
+            <tr>
+                <td>Franta</td>
+                <td>1784</td>
+                <td>33</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Germania</td>
+                <td>1296</td>
+                <td>2</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Spania</td>
+                <td>151</td>
+                <td>9</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Regatul Unit</td>
+                <td>373</td>
+                <td>6</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Elvetia</td>
+                <td>490</td>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Belgia</td>
+                <td>267</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Suedia</td>
+                <td>326</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Norvegia</td>
+                <td>382</td>
+                <td>4</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Austria</td>
+                <td>182</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Grecia</td>
+                <td>90</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Islanda</td>
+                <td>70</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Danemarca</td>
+                <td>264</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>San Marino</td>
+                <td>62</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Cehia</td>
+                <td>63</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Croatia</td>
+                <td>13</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+<br>
+<table class="floatRight">
+    <caption>Coronavirus in Asia</caption>
+    <tr>
+        <th>TARA</th>
+        <th>CAZURI CONFIRMATE</th>
+        <th>DECEDATI</th>
+    </tr>
+    <tr>
+
+        <td>China</td>
+        <td>80.908</td>
+        <td>3161</td>
+    </tr>
+    <tr>
+        <td>Coreea de Sud</td>
+        <td>7755</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>Iran </td>
+        <td>8042 </td>
+        <td>291 </td>
+    </tr>
+    <tr>
+        <td>Japonia</td>
+        <td>568</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>Singapore</td>
+        <td>166</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Malaysia</td>
+        <td>129</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Kuwait</td>
+        <td>69</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Bahrain</td>
+        <td>110</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Thailanda</td>
+        <td>59</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Taiwan</td>
+        <td>48</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Iraq</td>
+        <td>61</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>India</td>
+        <td>50</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Emiratele Arabe Saudite</td>
+        <td>74</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Lebanon</td>
+        <td>41</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Israel</td>
+        <td>70</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Vietnam</td>
+        <td>35</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Palestina</td>
+        <td>29</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Oman</td>
+        <td>18</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Qatar</td>
+        <td>24</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Pakistan</td>
+        <td>16</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Philippine</td>
+        <td>33</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Arabia Saudita</td>
+        <td>20</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Indonesia</td>
+        <td>19</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Cambodia</td>
+        <td>2</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Sri Lanka</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Bhutan</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Nepal</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Afghanistan</td>
+        <td>7</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Jordan</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Bangladesh</td>
+        <td>3</td>
+        <td>0</td>
+    </tr>
+</table>
+       
+        <table id="America">
+            <caption>Coronavirus in America</caption>
+            <tr>
+                <th>TARA</th>
+                <th>CAZURI CONFIRMATE</th>
+                <th>DECEDATI</th>
+            </tr>
+            <tr>
+                <td>Statele Unite ale Americii</td>
+                <td>1025</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Canada</td>
+                <td>93</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Brazilia</td>
+                <td>34</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Argentina</td>
+                <td>19</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Chile</td>
+                <td>17</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Ecuador</td>
+                <td>17</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Costa Rica</td>
+                <td>13</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Peru</td>
+                <td>11</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Panama</td>
+                <td>7</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Mexic</td>
+                <td>7</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Paraguay</td>
+                <td>5</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Republica Dominicana</td>
+                <td>5</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Columbia</td>
+                <td>3</td>
+                <td>0</td>
+            </tr>
+        </table>
+        <table id="Africa">
+            <caption>Coronavirus in Africa</caption>
+            <tr>
+                <th>TARA</th>
+                <th>CAZURI CONFIRMATE</th>
+                <th>DECESE</th>
+            </tr>
+            <tr>
+                <td>Egipt</td>
+                <td>59</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Algeria</td>
+                <td>20</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Africa de Sud</td>
+                <td>7</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Tunisia</td>
+                <td>5</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Senegal</td>
+                <td>4</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Morocco</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Burkia Faso</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Nigeria</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Cameroon</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Republica Democratica Congo</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Togo</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </table>
+        <table id="Oceania">
+            <caption>Coronavirus in Oceania</caption>
+            <tr>
+                <th>TARA</th>
+                <th>CAZURI CONFIRMATE</th>
+                <th>DECESE</th>
+            </tr>
+            <tr>
+                <td>Australia</td>
+                <td>112</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Noua Zeelanda</td>
+                <td>5</td>
+                <td>0</td>
+            </tr>
+        </table>
+        <table id="confirmated">
+            <tr>
+                <th>CAZURI CONFIRMATE</th>
+                <th>DECEDATI</th>
+                <th>VINDECATI</th>
+            </tr>
+            <tr>
+                <td>118.619</td>
+                <td>4.292</td>
+                <td>57.461</td>
+            </tr>
+        </table>
+        <p>Ultima actualizare a tabelelor: 11.03.2020</p>
+        <iframe width="1040" height="700" src="https://coronavirus.app"></iframe><br>
+        <p>Datele prezentate pe harta sunt date actualizate permanent!</p>
+        <br>
+
+        </div>
+        <br>
+        <a href="index.html"><img src="images/left-button.png" id="left-button" alt="previous button"></a>
+        <a href="protection.html"><img src="images/right-button.png" id="right-button" alt="next button"> </a>
+        <br>
+    
+    
+    
+    </div>
+</article>
+<br>
+<a href="#top"><img src="images/up-button.png" alt="up button" id="up-button"> </a>
+    <a href="#bottom"><img src="images/down-button.png" alt="down button" id="down-button"> </a>
+<div id="bottom"></div>
+</body>
+</html>
+
+
+

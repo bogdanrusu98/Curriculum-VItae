@@ -1,0 +1,132 @@
+@media screen and (max-width: 1920px) {
+    .spacer {
+        margin-top: 1000px;
+        height: 200px;
+    }
+ 
+}
+@media screen and (max-width: 1680px) {
+    .spacer {
+        height: 230px;
+        margin-top: 53%;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .spacer {
+        margin-top: 19%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .spacer {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .spacer {
+        height: 350px;
+    }
+
+}
+@media screen and (max-width: 1075px) {
+    .spacer {
+        height: 400px;
+    }
+    .header img {
+        width: 10%;
+        margin-top: 20%;
+    }
+
+}
+@media screen and (max-width: 940px) {
+    .spacer {
+        height: 450px;
+    }
+}
+@media screen and (max-width: 807px) {
+    .spacer {
+        height: 500px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .spacer {
+        height: 550px;
+    }
+}
+@media screen and (max-width: 555px) {
+    .spacer {
+        height: 600px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .orar .schedule ul li {
+        font-size: 50px;
+    }
+    .orar {
+        width: 100%;
+    }
+    .orar .schedule h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .header {
+        width: 100%;
+    }
+    .contact {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .spacer {
+        height: 650px;
+    }
+    .orar {
+        width: 100%;
+    }
+    .orar .schedule h1 {
+        font-size: 60px;
+    }
+    .header img {
+        width: 30%;
+        margin-top: 40%;
+    }
+
+}
+@media screen and (max-width: 2560px) {
+    .spacer {
+        margin-top: 38%;
+    }
+}
+/*Height*/
+@media screen and (max-height: 750px) {
+    .spacer {
+        margin-top: 400px;
+    }
+}
+@media screen and (max-height: 650px) {
+    .spacer {
+        margin-top: 300px;
+    }
+}
+@media screen and (max-height: 550px) {
+    .spacer {
+        margin-top: 200px;
+    }
+}
+@media screen and (max-height: 450px) {
+    .spacer {
+        margin-top: 100px;
+    }
+    .header img {
+        margin-top: 7%;
+    }
+}
+@media screen and (max-height: 350px) {
+    .spacer {
+        margin-top: 0;
+    }
+}

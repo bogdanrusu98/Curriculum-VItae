@@ -1,0 +1,44 @@
+@media screen and (max-width: 1050px) {
+.nav-bar td {
+    padding: auto;
+    font-size: 1.3em;
+    display: inline;
+}
+#down-button, #up-button, #left-button, #right-button {
+    width: 5%!important;
+}
+}
+@media screen and (max-width: 1037px) {
+    .nav-bar td {
+        padding: auto;
+        font-size: 1em;
+        display: inline;
+    }
+    
+}
+@media screen and (max-width: 750px) {
+    header.container {
+        display: none!important;
+    }
+    #down-button, #up-button, #left-button, #right-button {
+        width: 7%!important;
+    }
+    article {
+        clear: both;
+        margin: auto;
+        padding: auto;
+        
+    }
+}
+@media screen and (max-width: 550px) {
+    body {
+        max-width: 100%;
+    }
+    #down-button, #up-button, #left-button, #right-button {
+        width: 9%!important;
+    }
+    iframe {
+        width: 100%!important;
+        font-size: 60px!important;
+    }
+}

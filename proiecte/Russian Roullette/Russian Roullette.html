@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Russian Roullette</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://use.fontawesome.com/ee274dc311.js"></script> 
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <style>
+            body, html {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background-image: url("background.jpg");
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 4%;
+            }
+
+            h2 {
+                display: inline;
+            }
+
+            h2:first-child {
+                float: left;
+            }
+
+            h2:last-child{
+                float: right;
+            }
+
+            .opacity {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(175, 175, 175, 0.4);
+            }
+
+            #start {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 30px; 
+            }
+
+            #shoot {
+                position: absolute;
+                top: 90%;
+                left: 50%;
+                font-size: 30px;
+            }
+
+        </style>
+    </head>
+    <body onload="homepage()">
+
+        <div class="opacity">
+            <div class="container" id="container">
+                <h1>Russian Roullette</h1>
+                <h3>Press START button to start</h3>
+                <h1 id="bulletsRemaining"></h1>
+                <a href="#" onclick="myFunction()" class="btn btn-success btn-lg" id="start">START</a>
+
+                <div id="score">
+                    <h2>You: <span id="yourScore"></span></h2>
+                    <h2>BOT: <span id="botScore"></span></h2>
+                </div>
+
+                <h1 id="dead">YOU DIED</h1>
+                <h1 id="winner">YOU SURVIVED</h1>
+                <h1 id="info"></h1>
+
+            
+                <button href="#" onclick="shoot()" class="btn btn-danger btn-lg" id="shoot">SHOOT</button>
+                
+                <audio id="gunFire">
+                    <source src="GunShotSnglShotIn PE1097906.ogg" type="audio/ogg">
+                    <source src="GunShotSnglShotIn PE1097906.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+
+                <audio id="fail">
+                    <source src="fail-trombone-03.ogg" type="audio/ogg">
+                    <source src="fail-trombone-03.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <audio id="winnerSound">
+                    <source src="success-1-6297.ogg" type="audio/ogg">
+                    <source src="success-1-6297.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+
+
+        <script>
+            var bullets = 6;
+            var number1 = 0;
+            var number2 = 0;
+            var yourScore = 0;
+            var botScore = 0;
+
+            function homepage() {
+                document.getElementById("start").style.display = "inline";
+                document.getElementsByTagName("h3")[0].style.display = "inline";
+                document.getElementById("score").style.visibility = "hidden";
+                document.getElementById("shoot").style.visibility = "hidden";
+                document.getElementById("dead").style.visibility = "hidden";
+                document.getElementById("winner").style.visibility = "hidden";
+                document.getElementsByClassName("opacity")[0].style.backgroundColor = "rgba(175, 175, 175, 0.4)";
+            }
+            
+            function myFunction() {
+                number1 = Math.floor(Math.random() * bullets) + 1;
+                document.getElementById("yourScore").innerHTML = yourScore;
+                document.getElementById("botScore").innerHTML = botScore;
+                document.getElementById("start").style.display = "none";
+                document.getElementsByTagName("h3")[0].style.display = "none";
+                document.getElementsByClassName("opacity")[0].style.backgroundColor = "transparent";
+                document.getElementById("score").style.visibility = "visible";
+                document.getElementById("shoot").style.visibility = "visible";
+            }
+
+            function shoot() {
+                playAudio();
+                console.log(number1);
+                number2 ++;
+                if (number1 == number2) {
+                    fail();
+                }else{
+                    bullets = bullets - 1;
+                    document.getElementById("bulletsRemaining").innerHTML = "Bullets remaining: " + bullets;
+                    document.getElementById("info").innerHTML = "Wait for BOT to shoot his shot";
+                    setTimeout(bot, 4000);
+                }
+                document.getElementById("shoot").disabled = true;
+                setTimeout(function() {document.getElementById("shoot").disabled = false;}, 7000)
+            }
+   
+            function bot() {
+                playAudio();
+                document.getElementById("info").innerHTML = "";
+                number2 ++;
+                console.log(number1);
+                if (number1 == number2) {
+                    win();
+                }else{
+                    bullets = bullets - 1;
+                    document.getElementById("bulletsRemaining").innerHTML = "Bullets remaining: " + bullets;
+                }
+            }
+
+            function fail() {
+                playFail();
+                document.getElementById("info").innerHTML = "";
+                document.getElementById("bulletsRemaining").innerHTML = "";
+                document.getElementById("shoot").style.visibility = "hidden";
+                bullets = 7;
+                number2 = 0;
+                botScore ++;
+                document.getElementsByClassName("opacity")[0].style.backgroundColor = "red";
+                document.getElementById("dead").style.visibility = "visible";
+                setTimeout(homepage, 5000);
+            }
+            
+            function win() {
+                playWin();
+                document.getElementById("info").innerHTML = "";
+                document.getElementById("shoot").style.visibility = "hidden";
+                document.getElementById("bulletsRemaining").innerHTML = "";
+                bullets = 7;
+                number2 = 0;
+                yourScore ++;
+                document.getElementsByClassName("opacity")[0].style.backgroundColor = "green";
+                document.getElementById("winner").style.visibility = "visible";
+                setTimeout(homepage, 5000);
+            }
+
+            function playAudio() { 
+                document.getElementById("gunFire").play(); 
+            } 
+
+            function playFail() {
+                document.getElementById("fail").play();
+            }
+
+            function playWin() {
+                document.getElementById("winnerSound").play();
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/*MENIU*/
+.menu {
+    background-color: rgb(37, 37, 37);
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+.menu ul li:first-child {
+    color: white;
+    font-size: 20px;
+}
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+.menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+.menu ul li:last-child{
+    float: right;
+    font-size: 20px;
+    color: grey;
+}
+
+/*PARALLAX*/
+.parallax {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-image: linear-gradient(to right, darkred , black);
+    background-position: center;
+    height: 570px;
+}
+.parallax video {
+    object-fit: fill;
+    position: relative;
+    height:570px;
+    width:100%;
+    opacity: 0.5;
+}
+.parallax .video-text {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    word-wrap: none;
+}
+.parallax .video-text h1 {
+    font-family: 'Gotu', sans-serif;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.parallax .video-text p {
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+/*CONTENT*/
+
+.content, .comments {
+        background: linear-gradient(rgba(255, 255, 255, 0.95),rgba(255, 254, 254, 0.95)), url(../img/bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 100px;
+
+}
+.content h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(87, 85, 85);
+    font-size: 30px;
+}
+.content {
+    text-align: center;
+}
+.content p {
+    margin: 0;
+    padding: 0;
+    color: grey;
+}
+.content .content-text {
+    overflow: hidden;
+    width: 70%;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+}
+
+.content .content-text .border .skillIcon {
+    font-size: 70px;
+    color: darkred;
+    padding-bottom: 5px;
+}
+.content .content-text .border .heading {
+    padding-bottom: 10px;
+}
+.content .content-text .border h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: grey;
+}
+.col-md-3 {
+    border: 0;
+    margin: auto;
+    padding: 50px;
+}
+/*Title*/
+.title {
+    background: url("../img/cta01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    text-align: center;
+    font-family: 'Gotu', sans-serif;
+}
+.title .title-content h1 {
+    color: white;
+    text-transform: uppercase;
+    padding-top: 120px;
+}
+.title p { 
+    color: rgb(207, 202, 202);
+}
+.title .title-content {
+    width: 60%;
+    margin: auto;
+    padding: auto;
+}
+/*COMMENTS*/
+.comments {
+    text-align: center;
+    padding-top: 60px;
+}
+.comments h1 {
+    font-family: 'Gotu', sans-serif;
+    color: grey;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+.comments p { 
+    padding: 0;
+    margin: 0;
+}
+.comments .authors{
+    overflow: hidden;
+    width: 70%;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+}
+
+.comments .authors .col-md-3 .text {
+    border-left: 10px solid lightgrey;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.comments .authors .col-md-3 .text p {
+    padding-top: 26px;
+    padding-left: 16px;
+    padding-bottom: 26px;
+    color: rgb(90, 90, 90);
+}
+.comments .authors .col-md-3 .icon p {
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 14px;
+}
+.comments .authors .col-md-3 .icon p span {
+    color: red;
+}
+.comments .authors .col-md-3 .icon img {
+    border: solid 1px white;
+    border-radius: 100px;
+    width: 50px;
+    float: left;
+    margin-top: 30px;
+}

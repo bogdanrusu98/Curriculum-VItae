@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+<title> Coronavirus in Romania </title>
+<link href = "images/coronavirus.jpg" rel="icon" type="image">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    background-image: url('images/coronavirus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: visible;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.button {
+    background-color: rgb(70, 68, 68);
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+.button:hover {
+    background-color: lightblue;
+    padding: 25px 30px;
+    font-weight: bold;
+}
+/*
+header.container{
+    background-color: rgb(214, 214, 214);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+}
+*/
+.nav-bar {
+    background-color: rgb(70, 68, 68);
+    padding: 25px;
+    width: 70%;
+    margin: auto;
+    border-bottom: lightblue solid 22px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+article {
+    padding: 25px;
+    width: 70%;
+    margin: auto;
+    font-family: Helvetica;
+    background-color: rgb(221, 221, 223);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+}
+.container-article h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+.container-article .coronavirus:hover {
+    color: darkred;
+}
+.container-article .coronavirus {
+    color: red;
+}
+.container-article p, li {
+    font-size: 20px;
+    color: rgb(70, 70, 70);
+}
+.container-article h2 {
+    font-family: cursive;
+    color: rgb(182, 74, 74);
+}
+.container-article {
+    position: relative;
+}
+.virus{
+    position: absolute;
+    animation:spin 25s linear infinite;
+    width: 48px;
+    left: 79%;
+    top: -0.89%;
+    padding: 25px;
+  }
+  .virus2 {
+     float: right;
+  }
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+        }
+    to {
+        transform:rotate(-360deg);
+        }
+  }
+  @-webkit-keyframes spin {
+    from {
+        transform:rotate(0deg);
+        }
+    to {
+        transform:rotate(-360deg);
+        }
+  }
+  #right-button {
+    width: 3%;
+    float: right;
+    margin-right: 30%;
+  }
+  #left-button {
+    width: 3%;
+    float: left;
+    margin-left: 30%;
+      
+  }
+#down-button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 3%;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+    display: block;
+    opacity: 0.65;
+  }
+  #down-button:hover {
+    opacity: 0.90;
+  }
+  #up-button{
+    margin-left: auto;
+    margin-right: 5%;
+    width: 3%;
+    bottom: 0;
+    float: right;
+    opacity: 0.65;
+  }
+  #up-button:hover {
+    opacity: 0.90;
+  }
+  iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
+  }
+</style>
+</head>
+<body>
+<header class="container">
+    <img src="images/images.jfif" class="virus" title="virus"> 
+<div class="nav-bar">
+    <table>
+    <tr>
+        <td><a href="index.html" class="button">Acasa</a></td>
+        <td><a href="dezvoltare.html" class="button">Coronavirus in lume</a></td>
+        <td><a href="protection.html" class="button">Cum ne protejam?</a></td>
+        <td><a href="romania.html" class="button">Coronavirus in Romania</a></td>
+        <td><a href="credits.html" class="button">Credite si Biografie</a></td>
+</tr>
+</table>
+</div>
+</header>
+<br><br><br>
+<article>
+    <div class="container-article">
+        <h1><span class="coronavirus">Coronavirus</span> in Romania</h1>
+<iframe width="1040" height="700" src="https://instnsp.maps.arcgis.com/apps/opsdashboard/index.html#/5eced796595b4ee585bcdba03e30c127"></iframe><br>
+<p>Datele prezentate pe harta sunt date actualizate permanent!</p>
+        <a href="protection.html"><img src="images/left-button.png" id="left-button" alt="previous button"></a>
+        <a href="credits.html"><img src="images/right-button.png" id="right-button" alt="next button"> </a>
+        <br>
+    </div>
+</article>
+<br>
+<a href="#top"><img src="images/up-button.png" alt="up button" id="up-button"> </a>
+    <a href="#bottom"><img src="images/down-button.png" alt="down button" id="down-button"> </a>
+<div id="bottom"></div>
+</body>
+</html>
+
+
+

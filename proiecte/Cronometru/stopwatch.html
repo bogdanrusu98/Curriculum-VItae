@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript</title>
+
+<style>
+
+    #demo {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #container {
+        width: 50%;
+        padding: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: orange;
+        text-align: center;
+        color: white;
+    }
+
+    #container h1 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    #container a {
+        padding: 10px 30px 10px 30px;
+        border: 2px white solid;
+        border-radius: 20px;
+        font-size: 30px;
+        color: white;
+    }
+
+</style>
+
+
+    <script>
+        function disabling () {
+            document.getElementById('myBtn').style.visibility = 'hidden';
+        }
+
+        function activating() {
+            document.getElementById('myBtn').style.visibility = 'visible';
+        }
+
+        var counter = 1;
+        var minutes = 0;
+        var hours = 0;
+
+            function timer() {
+                var resultValue = counter++;
+                var seconds = resultValue;
+
+                        if (counter > 59) {
+                            counter = seconds = 0;
+                            minutes = minutes + 1;
+                        }
+
+                        if (minutes > 59) {
+                            minutes = 0;
+                            hours = hours + 1;
+                        }
+                        
+                        document.getElementById("demo").innerHTML = hours + "h " + minutes + "m " + seconds + "s";
+            }
+            
+            function reset() {
+                seconds = hours = minutes = resultValue = 0;
+                counter = 1;
+                document.getElementById("demo").innerHTML = hours + "h " + minutes + "m " + seconds + "s";
+            }
+
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Stopwatch</h1>
+
+        <p id="demo"></p>
+
+        <a id="myBtn" onclick="Interval = setInterval(timer, 1000); disabling();">Start</a>
+        <a onclick="clearInterval(Interval); activating();">Stop</a>
+        <a onclick="clearInterval(Interval); reset(); activating();">Reset</a>
+
+    </div>
+</body>
+</html>
